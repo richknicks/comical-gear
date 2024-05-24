@@ -25,10 +25,10 @@ const App = () => {
   return (
     <div className="categories-container">
       {categories.map(({ title, id }) => (
-        <div className="category container">
-          {/* <img/> */}
-          <div className="category-body-container" key={id}>
-            <h2>{title}</h2>
+        <div className="category container" key={id}>
+          <div className="background-image"/>
+          <div className="category-body-container">
+            <h2 className="text-3xl font-bold underline bg-red-800">{title}</h2>
             <p>Shop Now</p>
           </div>
         </div>
