@@ -1,4 +1,6 @@
-import CategoryItem from "./components/category-item/category-item.component";
+import Directory from "./components/directory/directory.component";
+
+
 
 const App = () => {
   const categories = [
@@ -35,14 +37,7 @@ const App = () => {
   ];
 
   return (
-    <div
-      id="categories-container"
-      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-12"
-    >
-      {categories.map(( category ) => (
-         <CategoryItem key={ category.id } category={ category }/>
-      ))}
-    </div>
+    <Directory categories={categories}/>
   );
 };
 
