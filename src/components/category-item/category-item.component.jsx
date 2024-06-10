@@ -13,7 +13,7 @@ const CategoryItem = ({ category }) => {
           id="category-label-container"
           className="w-full h-1/4 py-2 px-2 flex flex-row items-center justify-center gap-4 border-t border-black"
         >
-          <h2 id="category-name" className="font-bold text-22 text-gray-700">
+          <h2 id="category-name" className="font-bold font-custom text-22 text-gray-700">
             {title}
           </h2>
           <p id="call-to-action" className="font-light text-16">
